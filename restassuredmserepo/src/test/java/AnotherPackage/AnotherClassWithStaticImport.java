@@ -9,6 +9,7 @@ public class AnotherClassWithStaticImport {
 
 		// Do not Use class name to call static members
 		System.out.println(name);
+		//origin master
 		printName();
 	}
 }
