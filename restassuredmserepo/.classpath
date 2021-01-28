@@ -35,5 +35,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="src" path="/makeseleniumeasy-mse_readytouseseleniumjavacode-81d0a05a3cba"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
