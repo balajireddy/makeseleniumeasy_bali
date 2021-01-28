@@ -1,0 +1,37 @@
+{
+  "sampleData": {
+    "firstName": "Amod",
+    "lastName": "Mahajan",
+    "address": [
+      {
+        "city": "Patna",
+        "state": "Bihar"
+      },
+      {
+        "city": "Benagluru",
+        "state": "Karnataka"
+      }
+    ],
+    "mobile": {
+      "phone": "Samsung"
+    }
+  },
+  
+  "sampleDataUpdated": {
+    "firstName": "ANimesh",
+    "lastName": "Gupta",
+    "address": [
+      {
+        "city": "Bhopal",
+        "state": "MP"
+      },
+      {
+        "city": "Kolkata",
+        "state": "WB"
+      }
+    ],
+    "mobile": {
+      "phone": "Iphone"
+    }
+  }
+}
