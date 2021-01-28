@@ -55,7 +55,7 @@ public class test {
 			JsonPath js1=new JsonPath(getPlace);
 			String actualaddress=js1.getString("address");
 			
-			System.out.println("!!!!!!!!!!!" +actualaddress);
+			System.out.println("!!!!@@@@****!!!!!!!" +actualaddress);
 	
 		//https://rahulshettyacademy.com/maps/api/place/add/json?key =qaclick123
 
