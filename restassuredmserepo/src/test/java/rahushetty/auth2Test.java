@@ -53,6 +53,9 @@ public class auth2Test {
 		
 		System.out.println(response);
 		
+		String response=given().queryParam("access_token12", accestoken_variable)
+		.when().log().all()
+		.get("https://rahulshettyacademy.com/getCourse.php12").asString();
 		
 		getcourses gc=((RequestSpecification) given().queryParam("access_token", accestoken_variable).expect().defaultParser(Parser.JSON)
 				.when()).log().all()
