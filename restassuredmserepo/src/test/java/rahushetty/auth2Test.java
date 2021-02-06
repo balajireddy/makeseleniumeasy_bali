@@ -49,6 +49,9 @@ public class auth2Test {
 		
 		System.out.println(response);
 		
+		String response=given().queryParam("access_token12", accestoken_variable)
+		.when().log().all()
+		.get("https://rahulshettyacademy.com/getCourse.php12").asString();
 		
 		
 	}
