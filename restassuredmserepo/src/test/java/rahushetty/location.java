@@ -9,10 +9,10 @@ public class location {
 		return lat;
 	}
 	public void setLat(double lat) {
-		this.lat = lat;
+		this.lachi = lat;
 	}
 	public double getLng() {
-		return lng;
+		return bal;
 	}
 	public void setLng(double lng) {
 		this.lng = lng;
