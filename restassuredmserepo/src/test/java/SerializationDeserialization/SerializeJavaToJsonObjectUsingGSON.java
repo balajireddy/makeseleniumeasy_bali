@@ -14,8 +14,8 @@ public class SerializeJavaToJsonObjectUsingGSON {
 		
 		// Create a Employee java object
 		Employee employeeObject = new Employee();
-		employeeObject.setFirstName("Amod");
-		employeeObject.setLastName("Mahajan");
+		employeeObject.setFirstName("balaji");
+		employeeObject.setLastName("reddy");
 		employeeObject.setAge(29);
 		employeeObject.setSalary(10987.77);
 		employeeObject.setMarried(false);

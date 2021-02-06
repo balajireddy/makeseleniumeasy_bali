@@ -1,11 +1,15 @@
 package rahushetty;
 import static io.restassured.RestAssured.*;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import io.restassured.parsing.Parser;
 import io.restassured.path.json.JsonPath;
+import io.restassured.specification.RequestSpecification;
 
 public class auth2Test {
 
@@ -50,7 +54,28 @@ public class auth2Test {
 		System.out.println(response);
 		
 		
+		getcourses gc=((RequestSpecification) given().queryParam("access_token", accestoken_variable).expect().defaultParser(Parser.JSON)
+				.when()).log().all()
+				.get("https://rahulshettyacademy.com/getCourse.php").as(getcourses.class);
+				
+		System.out.println(gc.getLinkedin());
+		System.out.println(gc.getLinkedin());
+		gc.getCourses().getApi().get(1).getCoursetitle();
+		
+		
+		List<api> apicorses=gc.getCourses().getApi();
+		for(int i=0;i<=apicorses.size();i++)
+		{
+			if(apicorses.get(i).getCoursetitle().equalsIgnoreCase("Soap ui testing")){
+				
+				System.out.println(apicorses.get(i).getPrice());
+			}
+			}
+		}
+
+		
+		
 		
 	}
 
-}
+
